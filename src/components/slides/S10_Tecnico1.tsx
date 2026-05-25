@@ -20,15 +20,48 @@ export default function S10_Tecnico1() {
         </motion.div>
 
         <div className="flex gap-5 flex-1 min-h-0">
-          {/* Key points */}
-          <motion.div variants={fadeLeft} className="w-[260px] flex flex-col justify-center gap-3 flex-shrink-0">
-            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider pb-1 border-b border-slate-100">Puntos Clave</h3>
-            <ul className="flex flex-col gap-2.5 text-[11px] text-slate-600">
-              <li className="flex gap-2"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Capa Cliente</strong>Interfaz web para trabajadores y clientes (Next.js).</div></li>
-              <li className="flex gap-2"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Backend (Node.js)</strong>API REST con autenticación JWT y lógica de negocio.</div></li>
-              <li className="flex gap-2"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Base de Datos</strong>Supabase/PostgreSQL — perfiles, servicios, solicitudes.</div></li>
-              <li className="flex gap-2"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Despliegue</strong>Vercel (frontend) + Railway (backend).</div></li>
-            </ul>
+          {/* Key points & Tech Stack */}
+          <motion.div variants={fadeLeft} className="w-[280px] flex flex-col justify-between gap-3 flex-shrink-0 min-h-0">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider pb-1 border-b border-slate-100">Puntos Clave</h3>
+              <ul className="flex flex-col gap-2 text-[10px] text-slate-600 leading-relaxed">
+                <li className="flex gap-1.5"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Capa Cliente</strong>Interfaz web rápida y responsiva para usuarios.</div></li>
+                <li className="flex gap-1.5"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Backend (Node.js)</strong>API REST robusta con seguridad JWT.</div></li>
+                <li className="flex gap-1.5"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Base de Datos</strong>Supabase con persistencia PostgreSQL.</div></li>
+                <li className="flex gap-1.5"><span className="text-blue-500 font-bold mt-0.5">→</span><div><strong className="text-slate-800 block">Despliegue Cloud</strong>Vercel (frontend) + Railway (backend).</div></li>
+              </ul>
+            </div>
+
+            {/* Stack Tecnológico */}
+            <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 flex flex-col gap-2">
+              <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Stack Tecnológico</h4>
+              <div className="grid grid-cols-2 gap-1.5 text-[9px] text-slate-700 font-medium">
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 flex-shrink-0 animate-pulse" />
+                  <span>Next.js / React</span>
+                </div>
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0 animate-pulse" />
+                  <span>Node / Express</span>
+                </div>
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0 animate-pulse" />
+                  <span>Supabase</span>
+                </div>
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 animate-pulse" />
+                  <span>PostgreSQL</span>
+                </div>
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0 animate-pulse" />
+                  <span>Tailwind CSS</span>
+                </div>
+                <div className="flex items-center gap-1.5 px-2 py-1 bg-white border border-slate-200/60 rounded-lg shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-pink-500 flex-shrink-0 animate-pulse" />
+                  <span>Framer Motion</span>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Image with lightbox */}

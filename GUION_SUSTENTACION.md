@@ -106,10 +106,10 @@
 ### Diapositiva 09 — Estudio Técnico — Arquitectura General
 * **Responsable:** Presentador 2
 * **Qué decir:**
-  > "En el apartado técnico, diseñamos una arquitectura en tres capas para garantizar robustez, velocidad y escalabilidad:
-  > En la **Capa de Presentación (Frontend)** utilizamos React y Next.js con TailwindCSS y Vanilla CSS, logrando una interfaz moderna, responsiva y veloz enfocada en dispositivos móviles.
-  > En la **Capa de Servicios (Backend)** implementamos un servidor API REST sobre Node.js y Express, encargado de procesar la lógica de negocio y controlar la autenticación segura.
-  > Y en la **Capa de Datos**, nos apalancamos en la infraestructura en la nube de Supabase con PostgreSQL como base de datos relacional para el almacenamiento persistente."
+  > "En el apartado técnico, diseñamos una arquitectura en tres capas para garantizar robustez, velocidad y escalabilidad. Como pueden ver detallado en la barra lateral de nuestra diapositiva, nos apalancamos en un **Stack Tecnológico moderno con indicadores visuales de estado activo**:
+  > Para la **Capa de Presentación (Frontend)**, utilizamos Next.js con React, Tailwind CSS y Framer Motion, logrando una interfaz responsiva de alto rendimiento optimizada para smartphones.
+  > Para la **Capa de Servicios (Backend)**, implementamos Node.js con Express, que expone una API REST segura mediante tokens JWT.
+  > Y para la **Capa de Datos**, utilizamos Supabase como nuestro Backend-as-a-Service, respaldado por la solidez relacional de una base de datos PostgreSQL en la nube."
 
 ---
 

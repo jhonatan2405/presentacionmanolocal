@@ -85,9 +85,10 @@ Desarrollar una plataforma digital que conecte a trabajadores independientes con
 
 ## Diapositiva 09 — ESTUDIO TÉCNICO — Arquitectura General
 - **Capa Cliente:** Aplicación web responsiva accesible desde cualquier dispositivo móvil o de escritorio.
-- **Capa de Aplicación (Frontend):** Construido en Next.js/React con estilos fluidos en TailwindCSS / Vanilla CSS para una experiencia de usuario rápida y dinámica.
+- **Capa de Aplicación (Frontend):** Construido en Next.js / React con estilos fluidos en Tailwind CSS para una experiencia de usuario rápida y dinámica.
 - **Capa de Servicios (Backend):** Servidor API REST desarrollado en Node.js + Express que maneja la lógica de negocio y seguridad.
 - **Capa de Datos:** Almacenamiento persistente e infraestructura en la nube gestionada en Supabase / PostgreSQL.
+- **Stack Tecnológico Visual:** Next.js/React, Node.js/Express, Supabase, PostgreSQL, Tailwind CSS, y Framer Motion con indicadores interactivos de estado.
 
 ---
 
