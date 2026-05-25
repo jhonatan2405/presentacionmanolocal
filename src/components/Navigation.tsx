@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Home, LayoutGrid, X } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Home, LayoutGrid, X, Maximize2, Minimize2 } from 'lucide-react'
 
 interface Props {
   current: number
@@ -35,7 +35,22 @@ export default function Navigation({
   slideTitle, slideSection, slideLabel, slides,
 }: Props) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false)
   const progress = ((current + 1) / total) * 100
+
+  const toggleFullscreen = useCallback(() => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {})
+    } else {
+      document.exitFullscreen().catch(() => {})
+    }
+  }, [])
+
+  useEffect(() => {
+    const onFsChange = () => setIsFullscreen(!!document.fullscreenElement)
+    document.addEventListener('fullscreenchange', onFsChange)
+    return () => document.removeEventListener('fullscreenchange', onFsChange)
+  }, [])
   const isFirst = current === 0
   const groups = groupBySection(slides)
 
@@ -177,6 +192,28 @@ export default function Navigation({
             }}
           >
             <ChevronRight size={15} strokeWidth={2.5} />
+          </motion.button>
+
+          {/* ── Separador ── */}
+          <div style={{ width: 1, height: 16, background: 'rgba(0,0,0,0.09)', margin: '0 4px' }} />
+
+          {/* ── Pantalla completa ── */}
+          <motion.button
+            onClick={toggleFullscreen}
+            whileHover={{ backgroundColor: '#F1F5F9', scale: 1.08 }}
+            whileTap={{ scale: 0.82 }}
+            title={isFullscreen ? 'Salir de pantalla completa' : 'Pantalla completa'}
+            style={{
+              width: 30, height: 30, borderRadius: 30,
+              border: 'none', background: 'transparent',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'pointer', color: '#64748B', flexShrink: 0,
+            }}
+          >
+            {isFullscreen
+              ? <Minimize2 size={14} strokeWidth={2.5} />
+              : <Maximize2 size={14} strokeWidth={2.5} />
+            }
           </motion.button>
         </div>
 
