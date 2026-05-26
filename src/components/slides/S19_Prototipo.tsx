@@ -7,17 +7,17 @@ import { PlayCircle, Search, UserCheck, Shield, Star, Briefcase, Bell, Users, Qr
 import ManoLocalLogo from '../ManoLocalLogo'
 
 const featuresCliente = [
-  { id: 'crear-cuenta', title: 'Crear Cuenta',    icon: Shield,    desc: 'Registro e inicio de sesión como cliente', videoSrc: '' },
-  { id: 'busqueda',     title: 'Búsqueda',         icon: Search,    desc: 'Filtra servicios por categoría o palabra clave', videoSrc: '' },
-  { id: 'solicitudes',  title: 'Ver Perfil',        icon: Users,     desc: 'Revisa perfil del trabajador antes de contratar', videoSrc: '' },
-  { id: 'calificacion', title: 'Calificaciones',   icon: Star,      desc: 'Califica el servicio recibido', videoSrc: '' },
+  { id: 'crear-cuenta', title: 'Crear Cuenta',    icon: Shield,    desc: 'Registro e inicio de sesión como cliente', videoSrc: '/videosenfoquecliente/registro e inicio de sesion enfoque cliente .mp4' },
+  { id: 'busqueda',     title: 'Búsqueda',         icon: Search,    desc: 'Filtra servicios por categoría o palabra clave', videoSrc: '/videosenfoquecliente/busqueda enfoque cliente.mp4' },
+  { id: 'solicitudes',  title: 'Ver Perfil',        icon: Users,     desc: 'Revisa perfil del trabajador antes de contratar', videoSrc: '/videosenfoquecliente/ver perfil enfoque cliente.mp4' },
+  { id: 'calificacion', title: 'Calificaciones',   icon: Star,      desc: 'Califica el servicio recibido', videoSrc: '/videosenfoquecliente/calificaciones enfoque cliente.mp4' },
 ]
 
 const featuresTrabajador = [
-  { id: 'crear-cuenta', title: 'Crear Cuenta',    icon: UserCheck, desc: 'Registro e inicio de sesión como trabajador', videoSrc: '' },
-  { id: 'perfil',       title: 'Gestión de Perfil', icon: Briefcase, desc: 'Completa tu perfil con servicios y experiencia', videoSrc: '' },
-  { id: 'publicacion',  title: 'Publicar Servicio', icon: Bell,      desc: 'Publica tus oficios con descripción y categoría', videoSrc: '' },
-  { id: 'reputacion',   title: 'Calificaciones',   icon: Star,      desc: 'Acumula calificaciones de tus clientes', videoSrc: '' },
+  { id: 'crear-cuenta', title: 'Crear Cuenta',    icon: UserCheck, desc: 'Registro e inicio de sesión como trabajador', videoSrc: '/videosenfoquetrabajador/crear cuenta enfoque trabajador .mp4' },
+  { id: 'perfil',       title: 'Gestión de Perfil', icon: Briefcase, desc: 'Completa tu perfil con servicios y experiencia', videoSrc: '/videosenfoquetrabajador/gestion perfil enfoque trabajador .mp4' },
+  { id: 'publicacion',  title: 'Publicar Servicio', icon: Bell,      desc: 'Publica tus oficios con descripción y categoría', videoSrc: '/videosenfoquetrabajador/publicar servicio enfoque trabajador .mp4' },
+  { id: 'reputacion',   title: 'Calificaciones',   icon: Star,      desc: 'Acumula calificaciones de tus clientes', videoSrc: '/videosenfoquetrabajador/calificaciones enfoque trabajador .mp4' },
 ]
 
 export default function S19_Prototipo() {
